@@ -34,11 +34,11 @@ class Card {
         if (!isNaN(this.value)) {
             let html = "";
             for (let i = 1; i <= this.value; i++) {
-                html += <div class="symbol"></div>;
+                html += `<div class="symbol"></div>`;
             }
             return html;
         } else {
-            return <div class="title">${this.value}</div>;
+            return `<div class="title">${this.value}</div>`;
         }
     }
 
